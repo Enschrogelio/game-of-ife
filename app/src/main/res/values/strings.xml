@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Game  of  life</string>
+	<string name="btn_auto_on">Pause</string>
+	<string name="btn_auto_off">Start</string>
+	<string name="btn_clear">Kill</string>
+	<string name="text_livecells" formatted="false">Living  cells:  %d</string>
+	<string name="menu_about">About</string>
+	<string name="about_title">Game  of  life</string>
+	<string name="about">BLA BLA</string>
+</resources>

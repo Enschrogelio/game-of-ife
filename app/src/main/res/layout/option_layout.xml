@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:paddingTop = "21dip"
+        android:id="@+id/decor_content_parent">
+
+
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/titulo"
+            android:paddingBottom="20dp"
+            />
+
+
+        <TableRow
+            android:layout_weight="0"
+            android:gravity="center"
+            android:paddingBottom = "2dip"
+            android:paddingTop="70dp"
+            >
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/button_instructions"
+                android:onClick="Instructions"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_weight="0"
+            android:gravity="center"
+            android:paddingBottom = "35dip"
+            >
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/button_start"
+                android:onClick="Start"/>
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_weight="0"
+            android:gravity="center"
+            android:paddingBottom = "35dip"
+            >
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/button_about"
+                android:onClick="About"/>
+
+        </TableRow>
+
+    </TableLayout>
+</RelativeLayout>

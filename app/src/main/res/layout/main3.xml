@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/scorebar"
+        android:orientation="horizontal"
+        android:padding="5dip"
+        android:layout_width="fill_parent"
+        android:layout_height="64dp"
+        android:background="#ff090201"
+        android:gravity="center"
+        android:textColor="#FDFCFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_column="0"
+
+        >
+
+        <com.ashley.com.gameoflife.CustomTextView
+            android:text="@string/about_title"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:textSize="18dp"/>
+
+        <com.ashley.com.gameoflife.CustomTextView
+            android:id="@+id/text_livecells"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:text="@string/text_livecells"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="1dip"
+        android:gravity="center_vertical"
+        android:background="#22000000"
+        android:layout_alignParentBottom="true"
+        >
+
+        <ToggleButton
+
+
+            android:id="@+id/btn_onOff"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.3"
+            android:textOn="@string/btn_auto_on"
+            android:textOff="@string/btn_auto_off"
+            android:textStyle="bold"
+            android:textColor="#fffffafe"
+            android:layout_margin="8dp"
+            android:background="@drawable/botton_black"
+            android:autoText="false" />
+
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.3"
+            android:textColor="#fffffafe"
+            android:text="@string/btn_clear"
+            android:background="@drawable/botton_black"
+            android:onClick="onClickButtonKill"
+            android:layout_margin="8dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <com.ashley.com.gameoflife.WorldView3
+        android:id="@+id/world2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#feffff"
+        android:layout_below="@id/scorebar"
+        android:layout_above="@id/buttonbar"
+
+        />
+
+</RelativeLayout>

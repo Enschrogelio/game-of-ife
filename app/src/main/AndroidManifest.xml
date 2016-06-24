@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ashley.com.gameoflife"
+    android:versionCode="3"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="7" />
+    <supports-screens android:largeScreens="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:anyDensity="true"
+        android:resizeable="true"/>
+
+    <application
+        android:icon="@drawable/thumbnail"
+        android:label="@string/app_name" >
+        <activity
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:name="com.ashley.com.gameoflife.Splash"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.ashley.com.gameoflife.menu_layout_activity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+        android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.ashley.com.gameoflife.About"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait"/>
+
+
+        <activity android:name="com.ashley.com.gameoflife.Instruction"
+        android:configChanges="keyboard|keyboardHidden|orientation"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.ashley.com.gameoflife.OptionActivity"
+        android:configChanges="keyboard|keyboardHidden|orientation"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"/>
+
+
+        <activity android:name="com.ashley.com.gameoflife.WorldActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.ashley.com.gameoflife.WorldActivity2"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.ashley.com.gameoflife.WorldActivity3"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"/>
+
+
+
+    </application>
+
+</manifest>
